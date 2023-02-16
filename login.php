@@ -8,33 +8,22 @@
     </head>
     <body>
         <div class="loginBox">
-            <img src="Imagenes/Garza.png" alt="Logo Garza">
-            <h1> Login Here</h1>
-            <form>
+            <img class="imagenLogo" src="Imagenes/Garza.png" alt="Logo Garza">
+            <h1> LOGIN </h1>
+            <form method = "POST" action ="consultas.php">
                 <!--NO CUENTA -->
-                <label for="NoCuenta">No. Cuenta</label>
-                <input type="text" placeholder="Ingresa tu No. Empleado">
+                <label for="NoEmpleado">No. Empleado</label>
+                <input name="NoCuentatxt" type="text" placeholder="Ingresa tu No. Empleado">
                 
                 <!-- NIP -->
                 <label for="Nip">NIP</label>
-                <input type="password" placeholder="Ingresa tu NIP">
+                <input name="Niptxt" type="password" placeholder="Ingresa tu NIP">
+                
+                <input type="submit" value="Iniciar Sesión">
 
-                <input type="sumit" value="Log In">
-
-                <a href="#">Olvidaste tu NIP</a>
-                <a href="#">No tienes una cuenta</a>
+                <a class="underlineHover" href="#">¿Olvidaste tu NIP?</a><br>
 
             </form>
         </div>
     </body>
 </html>
-
-<?php
-
-
-
-
-
-
-
-?>
