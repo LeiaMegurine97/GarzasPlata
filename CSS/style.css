@@ -1,0 +1,54 @@
+/*@font-face {
+    font-family: 'Merriweather'; nombre que le quieras dar 
+    src: url('Fuente/Merriweather-Black.ttf'); ruta relativa al archivo de fuente
+  }*/
+
+:root {
+    --primary: #ba0f16;
+    --light: #ffffff;
+    --grey: #efefef;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+a:hover{
+    text-decoration: none;
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.avatar{
+    max-width: 35px;
+}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+  
+#sidebar-container .logo{
+    padding: 0.875rem 1.25rem;
+}
+  
+#sidebar-container .menu{
+    width: 18rem;
+}
+.btn-search{
+    right: 5px;
+}
+
+html, body {
+    height: 100%;
+}
+
+#contenedor {
+    width: 100%;
+}

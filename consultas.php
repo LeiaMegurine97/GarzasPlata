@@ -1,7 +1,8 @@
 <?php
-    include ('conexion.php');
+    include ('Global/conexion.php');
     session_start();
-
+    
+    //RESEPCIÓN DE LAS VARIABLES
     $NoCuenta = $_POST['NoCuentatxt'];
     $Nip = $_POST['Niptxt'];
 
@@ -11,11 +12,11 @@
 
     if ($array['contar']>0){
         $_SESSION['noCuenta'] = $NoCuenta;
-        //header('Location: inicio.php');
+        header('Location: index.html');
     }else{    
         echo '<script type="text/javascript"> 
 		window.location.href="login.php";
-        alert("Error!, No se puede iniciar sesion debido a un error en los datos ingresados.");
+        alert("Error!, No. de Empleado o Nip incorrectos. Ingreselos nuevamente de manera correcta.");
         </script>';
     }
 ?>
