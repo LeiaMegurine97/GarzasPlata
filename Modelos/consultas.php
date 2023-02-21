@@ -1,7 +1,8 @@
 <?php
-    include ('Global/conexion.php');
-    session_start();
+    include('../Global/conexion.php');
     
+    session_start();
+
     //RESEPCIÓN DE LAS VARIABLES
     $NoCuenta = $_POST['NoCuentatxt'];
     $Nip = $_POST['Niptxt'];
@@ -11,8 +12,8 @@
     $array = sqlsrv_fetch_array($consulta);
 
     if ($array['contar']>0){
-        $_SESSION['noCuenta'] = $NoCuenta;
-        header('Location: index.html');
+         $_SESSION['noCuenta'] = $NoCuenta;
+         header("Location: ../Principal.php");
     }else{    
         echo '<script type="text/javascript"> 
 		window.location.href="login.php";

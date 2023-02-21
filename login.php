@@ -11,14 +11,14 @@
             <div class="loginBox">
                 <img class="imagenLogo" src="Imagenes/Garza.png" alt="Logo Garza">
                 <h1> LOGIN </h1>
-                <form method = "POST" action ="consultas.php">
+                <form method = "POST" action ="Modelos/consultas.php">
                     <!--NO CUENTA -->
                     <label for="NoEmpleado">No. Empleado</label>
-                    <input name="NoCuentatxt" type="text" onkeypress="return onlyNumberKey(event)" minlegth="6" maxlength="6" placeholder="Ingresa tu No. Empleado">
+                    <input name="NoCuentatxt" type="text" onkeypress="return onlyNumberKey(event)" minlegth="6" maxlength="6" placeholder="Ingresa tu No. Empleado" require>
                     
                     <!-- NIP -->
                     <label for="Nip">NIP</label>
-                    <input name="Niptxt" type="password" onkeypress="return onlyNumberKey(event)" minlegth="4" maxlength="4" placeholder="Ingresa tu NIP">
+                    <input name="Niptxt" type="password" onkeypress="return onlyNumberKey(event)" minlegth="4" maxlength="4" placeholder="Ingresa tu NIP" require>
                     
                     <input type="submit" value="Iniciar Sesión">
 

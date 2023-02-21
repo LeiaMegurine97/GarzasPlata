@@ -1,3 +1,16 @@
+<?php
+  
+   session_start();
+   error_reporting(0);
+   $varsesion = $_SESSION['noCuenta'];
+
+   if ($varsesion == null || $varsesion='') {
+    echo 'ERROR!, Es necesario logearse para acceder a esta pagina';
+    die();
+    }
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -60,9 +73,9 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
-                      <a class="dropdown-item" href="#"><i class="icon ion-md-settings mr-2 lead"></i>Preferencias</a>
+                      <a class="dropdown-item" href="Estadistica"><i class="icon ion-md-settings mr-2 lead"></i>Preferencias</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="icon ion-md-power mr-2 lead"></i>Cerrar sesión</a>
+                      <a class="dropdown-item" href="Modelos/cerrar_session.php"><i class="icon ion-md-power mr-2 lead"></i>Cerrar sesión</a>
                     </div>
                   </li>
                 </ul>
