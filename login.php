@@ -4,7 +4,8 @@
         <meta charset ="utf-8">
         <title> Login </title>
         <link rel="stylesheet" href="CSS/login.css">
-
+        <link rel="stylesheet" type="txet/css" href="../AlertifyJS/CSS/alertify.css">
+        <link rel="stylesheet" type="txet/css" href="../AlertifyJS/CSS/Themes/default.css">
     </head>
     <body>
         <div id="contenedor">
@@ -14,11 +15,11 @@
                 <form method = "POST" action ="Modelos/consultas.php">
                     <!--NO CUENTA -->
                     <label for="NoEmpleado">No. Empleado</label>
-                    <input name="NoCuentatxt" type="text" onkeypress="return onlyNumberKey(event)" minlegth="6" maxlength="6" placeholder="Ingresa tu No. Empleado" require>
+                    <input name="txtNoCuenta" type="text" onkeypress="return onlyNumberKey(event)" minlegth="6" maxlength="6" placeholder="Ingresa tu No. Empleado" required>
                     
                     <!-- NIP -->
                     <label for="Nip">NIP</label>
-                    <input name="Niptxt" type="password" onkeypress="return onlyNumberKey(event)" minlegth="4" maxlength="4" placeholder="Ingresa tu NIP" require>
+                    <input name="txtNip" type="password" onkeypress="return onlyNumberKey(event)" minlegth="4" maxlength="4" placeholder="Ingresa tu NIP" required>
                     
                     <input type="submit" value="Iniciar Sesión">
 

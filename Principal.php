@@ -27,10 +27,7 @@
     <!-- Acceso a la Hoja de estilos-->
     <link rel="stylesheet" href="CSS/style.css">
 
-    <!--Librerias de la fuente-->
-    <link <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    
     
     <title>Pagina principal</title>
   </head>
@@ -46,7 +43,7 @@
               <div class="menu">
                   <a href="#" class="d-block text-light p-3"><i class="icon ion-md-apps mr-2 lead"></i>Tablero</a>
                   <a href="#" class="d-block text-light p-3"><i class="icon ion-md-people mr-2 lead"></i>Usuarios</a>
-                  <a href="#" class="d-block text-light p-3"><i class="icon ion-md-stats mr-2 lead"></i>Estadisticas</a>
+                  <a href="#" class="d-block text-light p-3"><i class="ion-md-clipboard mr-2 lead"></i>Registros</a>
                   <a href="#" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
                   <a href="#" class="d-block text-light p-3"><i class="icon ion-md-settings mr-2 lead"></i>Configuración</a>
               </div>
@@ -54,7 +51,7 @@
       
 
       <div class="w-75">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-buttom">
             <div class="container">  
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +70,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#"><i class="icon ion-md-person mr-2 lead"></i>Perfil</a>
-                      <a class="dropdown-item" href="Estadistica"><i class="icon ion-md-settings mr-2 lead"></i>Preferencias</a>
+                      <a class="dropdown-item" href="#"><i class="icon ion-md-build mr-2 lead"></i>Preferencias</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="Modelos/cerrar_session.php"><i class="icon ion-md-power mr-2 lead"></i>Cerrar sesión</a>
                     </div>
